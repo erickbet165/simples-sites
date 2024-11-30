@@ -1,11 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Agência</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #555555;
+            color: rgb(255, 0, 0);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .flex-container > div {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+        }
+
+        .equipe {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .equipe .perfil {
+            text-align: center;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .equipe img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .contato {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    
+
+<header>
+    <h1>ECOROTA</h1>
+</header>
+
+<section>
+    <div class="flex-container">
+        <div>
+            <h2>Missão</h2>
+            <p>Proporcionar aos nossos clientes uma experiência excepcional na compra e venda de veículos, oferecendo transparência, qualidade e confiança em cada etapa do processo.</p>
+        </div>
+        <div>
+            <h2>Visão</h2>
+            <p>Ser líder global na criação de soluções de mobilidade sustentáveis e inovadoras, transformando o futuro do transporte para um mundo mais limpo e conectado.</p>
+        </div>
+    </div>
+</section>
+
+<section class="equipe">
+    <h2 style="text-align: center;">Equipe</h2>
+    <div class="perfil">
+        <img src="img/png-transparent-corinthians-hd-logo.png" alt="Clube">
+        <h3>Corinthians</h3>
+        <p>Pior Clube do Mundo.</p>
+    </div>
+    <div class="perfil">
+        <img src="img/images.png" alt="Clube">
+        <h3>Real Madrid</h3>
+        <p>Time Com Mais Champions League.</p>
+    </div>
+    <div class="perfil">
+        <img src="img/images (1).png" alt="Clube">
+    <h3>Barcelona</h3>
+        <p>Time que revelou o Melhor Jogador do Mundo.</p>
+    </div>
+</section>
+
+<section class="contato">
+    <h2>Contato</h2>
+    <p>Email: contato@ecorota.com</p>
+    <p>Telefone: (55) 1234-5678</p>
+    <p>Endereço: Rua pedro de Souza, 123 - Cruzeiro</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Ecorota. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
